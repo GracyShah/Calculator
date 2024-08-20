@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate-me!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Calculate!</h1>
+    </div>
+
+    <div class="calc">
+        <input id="ip" readonly>
+        <div class="keys">
+            <button id="ac" onclick="AclearIp()">AC</button>
+            <button id="de">C</botton>
+            <button id="per" onclick="appendToip('%')">%</button>
+            <button id="divide" onclick="appendToip('/')">/</button>
+    
+            <button id="n7" onclick="appendToip('7')">7</button>
+            <button id="n8" onclick="appendToip('8')">8</button>
+            <button id="n9" onclick="appendToip('9')">9</button>
+            <button id="x" onclick="appendToip('*')">x</button>
+     
+            <button id="n4" onclick="appendToip('4')">4</button>
+            <button id="n5" onclick="appendToip('5')">5</button>
+            <button id="n6" onclick="appendToip('6')">6</button>
+            <button id="minus" onclick="appendToip('-')">-</button>
+    
+            <button id="n3" onclick="appendToip('1')">1</button>
+            <button id="n2" onclick="appendToip('2')">2</button>
+            <button id="n1" onclick="appendToip('3')">3</button>
+            <button id="plus" onclick="appendToip('+')">+</button>
+       
+        </div>
+        <div class="lLine">
+            <button id="n0" onclick="appendToip('0')">0</button>
+            <button id="dot" onclick="appendToip('.')">.</button>
+            <button id="eq" onclick="calculate()">=</button>
+        </div>
+          
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
